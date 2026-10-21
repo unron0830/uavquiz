@@ -14,7 +14,7 @@
 
 1. 在 GitHub 點 **Code → Download ZIP**，解壓縮整份專案，或執行 `git clone https://github.com/unron0830/uavquiz.git`。
 2. `iis/quiz` 就是已建置好的網站，含完整題庫與圖片。正式主機不用安裝 Node.js、Python、資料庫、URL Rewrite、ARR 或 WebSocket。
-3. 依照 [中文 IIS 部署說明](docs/IIS部署.md) 啟用 ASP.NET 4.8、建立網站／應用程式集區、執行首次設定及權限腳本。
+3. 依照 [中文 IIS 部署說明](docs/IIS部署.md) 啟用 ASP.NET 4.8、建立網站／應用程式集區、設定資料夾權限，再使用首次設定精靈（或本機設定腳本）。
 4. 主持人使用 `https://你的主機/quiz/#/host`；學生使用 `https://你的主機/quiz/#/join`，輸入場次代碼，或掃描投影頁 QR Code。
 
 **第一次進入 `#/host` 會顯示設定精靈**：輸入伺服器上的一次性設定碼、設定密碼、再次確認密碼，以及選填對外網址。沒有共用或預設主持人密碼；完成後才可開場。也可使用部署腳本預先設定。網站放在根目錄時，網址省略 `/quiz`。

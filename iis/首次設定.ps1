@@ -7,7 +7,7 @@ $cfg = Get-Content -Raw -Encoding UTF8 -LiteralPath (Join-Path $root 'App_Data/c
 $secure = Read-Host '請設定主持人密碼（至少 12 字元）' -AsSecureString
 $ptr = [Runtime.InteropServices.Marshal]::SecureStringToBSTR($secure)
 try { $password = [Runtime.InteropServices.Marshal]::PtrToStringBSTR($ptr) } finally { [Runtime.InteropServices.Marshal]::ZeroFreeBSTR($ptr) }
-if ($password.Length -lt 12) { throw '密碼至少需要 12 字元。' }
+if ([string]::IsNullOrWhiteSpace($password) -or $password.Length -lt 12 -or $password.Length -gt 128) { throw '密碼須為 12–128 字元，且不可全部為空白。' }
 $cfg.hostPassword = $password
 $bytes = New-Object byte[] 48
 $rng = [Security.Cryptography.RandomNumberGenerator]::Create()
