@@ -1,0 +1,27 @@
+{
+  "hostPassword": "",
+  "sessionSecret": "",
+  "publicBaseUrl": "",
+  "githubRepository": "https://github.com/unron0830/uavquiz",
+  "retentionDays": 365,
+  "timing": {
+    "answerSeconds": 15,
+    "revealSeconds": 0,
+    "transitionSeconds": 0,
+    "leaderboardExtraSeconds": 0,
+    "leaderboardEvery": 0,
+    "classMinutes": 50,
+    "minQuestionSeconds": 15,
+    "maxQuestionSeconds": 120
+  },
+  "courses": [
+    {
+      "courseNo": 1,
+      "title": "隨機搶答",
+      "rounds": [
+        20
+      ],
+      "explainReserveMinutes": 0
+    }
+  ]
+}

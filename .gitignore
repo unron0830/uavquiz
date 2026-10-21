@@ -1,0 +1,11 @@
+node_modules/
+apps/web/dist/
+.env
+**/App_Data/config.json
+**/App_Data/records/*
+**/App_Data/feedback/*
+**/App_Data/avatars/*
+*.log
+*.zip
+test-results/
+playwright-report/
