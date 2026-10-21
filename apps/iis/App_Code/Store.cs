@@ -36,6 +36,7 @@ namespace Uqa
                 Directory.CreateDirectory(RecordsDir);
                 Directory.CreateDirectory(ImagesDir);
                 Config = Settings.Load(ConfigFilePath, out ConfigCreated);
+                FirstRun.EnsureToken();
                 Bank = new Bank(QuestionsFile, GroupsFile);
                 try { Bank.Load(); } catch (Exception e) { Bank.Errors = new List<string> { e.Message }; }
                 RestoreAll();

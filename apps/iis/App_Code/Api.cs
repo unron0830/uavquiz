@@ -232,6 +232,12 @@ namespace Uqa
             }
 
             // ---- 老師 ----
+            if (path == "/setup/status" && m == "GET") { Send(h, new { required = FirstRun.Required }); return; }
+            if (path == "/setup/complete" && m == "POST")
+            {
+                if (!Limit("setup:" + Ip(h), 15 * 60 * 1000, 10)) { Fail(h, 429, "Too many attempts"); return; }
+                FirstRun.Complete(c.Body); Send(h, new { ok = true }); return;
+            }
             if (path == "/auth/me") { Send(h, new Dictionary<string, object> { { "host", IsHost(h) } }); return; }
             if (path == "/auth/login" && m == "POST")
             {

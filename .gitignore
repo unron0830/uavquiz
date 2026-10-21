@@ -9,3 +9,4 @@ apps/web/dist/
 *.zip
 test-results/
 playwright-report/
+**/App_Data/setup-token.txt
