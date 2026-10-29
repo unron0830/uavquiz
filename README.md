@@ -10,7 +10,7 @@
 
 ![題目回饋與 GitHub 回報](docs/images/03-feedback.png)
 
-![投影頁入場與隊伍名單](docs/images/04-projection-lobby.png)
+![投影頁入場與隊伍名單](docs/images/04-projection-lobby.jpg)
 
 ![主持後台開場與參賽者管理](docs/images/05-host-dashboard.png)
 
