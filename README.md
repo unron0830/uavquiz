@@ -10,6 +10,14 @@
 
 ![題目回饋與 GitHub 回報](docs/images/03-feedback.png)
 
+![投影頁入場與隊伍名單](docs/images/04-projection-lobby.png)
+
+![主持後台開場與參賽者管理](docs/images/05-host-dashboard.png)
+
+![主持後台題數與時間設定](docs/images/06-host-settings.png)
+
+![投影頁正式題目與作答選項](docs/images/07-projection-question.jpg)
+
 ## 直接部署，不需要編譯
 
 1. 在 GitHub 點 **Code → Download ZIP**，解壓縮整份專案，或執行 `git clone https://github.com/unron0830/uavquiz.git`。
@@ -72,3 +80,4 @@ npm run package:iis
 ## 題庫來源
 
 題目來源資訊保留在各題的 `source_name`、`source_url`、`source_version` 與原始題號欄位；相關權利歸原權利人。程式附帶的整理、解說與圖片不代表民航局官方解釋，考試請以主管機關最新公告為準。參見 [題庫來源與使用說明](docs/題庫來源.md)。
+
